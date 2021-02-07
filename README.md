@@ -1,21 +1,27 @@
-# Arduino LDR
+# Arduino RC Bluetooth car
 
-LDR (Light Dependent Resistor) is a component that has a (variable) resistance that changes with the light intensity that falls upon it. This allows them to be used in light sensing circuits.
+A RC Bluetooth Car controlled by Bluetooth via mobile device using [Bluetooth electronics application](https://play.google.com/store/apps/details?id=com.keuwl.arduinobluetooth)
 
 Arduino used: Arduino UNO
 
 ## Settings
 
 ```c
-/* LDR sensor input pin */
-#define sen 	A0
+/* Motor A pin 1 */
+const int motorA1 = 4;
 
-/* LED output pin */
-#define led 	7
+/* Motor A  pin 2 */
+const int motorA2 = 5;
 
-/* Average value between dark & light */
-#define avrVal 	10
+/* Motor B pin 1 */
+const int motorB1 = 6;
 
-/* Delay between checking */
-#define idelay	30
+/* Motor B pin 2 */
+const int motorB2 = 7;
+
+/* Motor A enable pin */
+const int motorAEn = 8;
+
+/* Motor B enable pin */
+const int motorBEn = 9;
 ```
